@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+		android:id="@+id/lblTittle"
+        android:text="Operaciones Básicas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_marginTop="10dp" 
+		android:layout_marginLeft="70dp"/>
+
+	<EditText
+        android:id="@+id/txtnum1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:inputType="numberDecimal"
+        android:hint="00"
+        android:layout_margin="5dp"
+		android:layout_below="@id/lblTittle"/>
+
+    <EditText
+        android:id="@+id/txtnum2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:inputType="numberDecimal"
+        android:hint="00"
+        android:layout_margin="5dp"
+		android:layout_below="@id/txtnum1" />
+
+    <Spinner
+        android:id="@+id/cboOperacionesBasicas"
+        android:layout_below="@id/txtnum2"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+        android:entries="@array/operacionesBasicas"/>
+
+    <TextView
+        android:id="@+id/lblRespuesta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cboOperacionesBasicas"
+        android:layout_marginTop="10dp"
+        android:text="Respuesta: ?"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblRespuesta"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="calcular"
+        android:text="Calcular" />
+</RelativeLayout>

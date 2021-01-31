@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OperacionesBasicas</string>
+    <string-array name="operacionesBasicas">
+        <item>Suma</item>
+        <item>Resta</item>
+        <item>Multiplicacion</item>
+        <item>Division</item>
+        <item>Factorial</item>
+		<item>Porcentaje</item>
+		<item>Exponenciación</item>
+		<item>Raíz N</item>
+		<item>Modulo</item>
+		<item>Mayor que</item>
+    </string-array>
+</resources>
