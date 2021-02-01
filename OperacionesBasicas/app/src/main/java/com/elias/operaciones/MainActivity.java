@@ -23,7 +23,7 @@ public class MainActivity extends Activity
 
 		num1 = 0;
 		num2 = 0;
-		respuesta = 0;
+		respuesta = 1;
 
 		try{
 			tempVal = (TextView)findViewById(R.id.txtnum1);
